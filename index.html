@@ -10,5 +10,51 @@
       </div>
     </header>
     <div id="app"></div>
+    <script>
+      // -----------GLobal environment start**************
+
+      // object : A collection of property and its value and nothing
+
+      // var information = {
+      //   name: "sarang",
+      //   age: 35,
+      // };
+
+      // console.log(information);
+
+      // console.log(information.name);
+      // console.log(information.age);
+
+      // console.log(window);
+      // console.log(this);
+
+      var one = 1;
+      var two = 2;
+      var three = 3;
+
+      function test() {
+        // test environment
+        var four = 4;
+        var five = 5;
+
+        // not global
+        function test2() {
+          // test2 environment
+          var six = 6;
+          console.log(six);
+          // test2 environment
+        }
+        // test environment
+
+        test2();
+      }
+
+      console.log(one);
+      console.log(two, three);
+      // console.log(five);
+      test();
+
+      // -----------GLobal environment end**************
+    </script>
   </body>
 </html>
